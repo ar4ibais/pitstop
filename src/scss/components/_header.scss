@@ -1,0 +1,107 @@
+.header {
+    margin: 10px 0;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 140%;
+        @extend %roboto-400;
+        color: #434645;
+        margin-bottom: 25px;
+    }
+    &__city,
+    &-info__item,
+    &__item-link {
+        transition: all .2s;
+        &:hover {
+            color: #E41F17;
+        }
+    }
+    &__city {
+        position: relative;
+        padding-left: 22px;
+        cursor: pointer;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 19px;
+            left: 0;
+            top: -1px;
+            background-image: url(../../img/icons/locate.svg);
+            background-repeat: no-repeat;
+        }
+    }
+    &-info__item + .header-info__item {
+        margin-left: 20px;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__info-btn {
+        cursor: pointer;
+        margin-right: 30px;
+    }
+    &__logo {
+        margin-right: 35px;
+    }
+    &__services {
+        @extend %roboto-700;
+        color: #fff;
+        font-size: 16px;
+        line-height: 130%;
+        padding: 10px 30px;
+        background-color: #E41F17;
+        border-radius: 27px;
+        margin-right: 12px;
+    }
+    &__search-label {
+        position: relative;
+        margin-right: 75px;
+    }
+    &__search {
+        border: 1px solid #E0E0E0;
+        border-radius: 27px;
+        padding: 11px 25px 10px;
+        width: 560px;
+        @extend %roboto-400;
+        font-size: 16px;
+        line-height: 140%;
+        &::placeholder {
+            color: #818992;
+        }
+    }
+    &__search-icon {
+        position: absolute;
+        top: 15px;
+        cursor: pointer;
+        right: 25px;
+    }
+    &__favs {
+        display: flex;
+        width: 230px;
+        justify-content: space-between;
+    }
+    &__favs-item,
+    &__item {
+        @extend %roboto-400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #181F22;
+    }
+    &__favs-item {
+        text-align: center;
+        cursor: pointer;
+    }
+    &__favs-item img {
+        display: inline-block;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item + .header__item {
+        margin-left: 35px;
+    }
+}
