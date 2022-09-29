@@ -1,0 +1,69 @@
+.entry {
+    &__wrapper {
+        margin: 30px 0;
+        min-height: 635px;
+        background-image: url(../../img/entry-bg.jpg);
+        background-repeat: no-repeat;
+    }
+    &__inner {
+        position: relative;
+    }
+    &__info {
+        padding: 170px 0 170px 80px;
+    }
+    &__title {
+        @extend %roboto-700;
+        font-size: 70px;
+        line-height: 130%;
+        color: $dark;
+        margin-bottom: 35px;
+    }
+    &__link-red,
+    &__link-white {
+        @extend %roboto-700;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &__link-red {
+        padding: 20px 64px 20px 40px;
+        background-color: $red; 
+        color: #fff;
+        position: relative;
+        border-radius: 32px;
+        margin-right: 25px;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 18px;
+            height: 18px;
+            right: 35px;
+            top: 22px;
+            background-repeat: no-repeat;
+            background-image: url(../../img/icons/pencil.svg);
+        }
+    }
+    &__link-white {
+        padding: 20px 40px;
+        color: $dark;
+        border: 1px solid $dark;
+        border-radius: 32px;
+    }
+    &__buttons {
+        position: absolute;
+        right: -20px;
+        bottom: 0;
+    }
+    &__btn {
+        padding: 27px;
+        border-radius: 50%;
+        display: block;
+        box-shadow: 0px 8px 18px rgba(228, 31, 23, 0.17);
+    }
+    &__btn--white {
+        background-color: #fff;
+        margin-bottom: 12px;
+    }
+    &__btn--red {
+        background-color: $red;
+    }
+}
