@@ -56,6 +56,10 @@
         background-color: #E41F17;
         border-radius: 27px;
         margin-right: 12px;
+        transition: all .2s;
+        &:hover {
+            background-color: $dark-red;
+        }
     }
     &__search-label {
         position: relative;

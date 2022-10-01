@@ -1,0 +1,73 @@
+.season {
+    padding: 80px 0;
+    background-color: #F2F6F7;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__link {
+        @extend %roboto-700;
+        font-size: 18px;
+        line-height: 131%;
+        text-transform: uppercase;
+        color: $dark;
+        text-decoration: underline;
+    }
+    &__slider {
+        width: 880px !important;
+        height: 440px;
+    }
+    &__item {
+        padding: 50px;
+        background-image: url(../../img/season/1.jpg);
+        border-radius: 18px;
+        color: #fff;
+    }
+    &__item-text,
+    &__date {
+        @extend %roboto-400;
+        font-size: 18px;
+        line-height: 140%;
+    }
+    &__date {
+        padding: 4px 16px 5px;
+        border: 1px solid #fff;
+        border-radius: 18px;
+        display: inline;
+    }
+    &__item-title {
+        @extend %roboto-700;
+        font-size: 40px;
+        line-height: 130%;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    &__item-text {
+        margin-bottom: 75px;
+    }
+    &__item-link {
+        @extend %roboto-700;
+        font-size: 14px;
+        line-height: 140%;
+        color: #000;
+        text-decoration: underline;
+        text-transform: uppercase;
+        padding-right: 22px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background-image: url(../../img/icons/arrow-right.svg);
+        }
+    }
+    .slick-next {
+        right: -30px;
+    }
+}

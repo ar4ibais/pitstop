@@ -1,0 +1,51 @@
+.hots {
+    margin-bottom: 130px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 30px;
+    }
+    &__item {
+        width: 425px !important;
+        height: 240px !important;
+        padding: 30px;
+    }
+    &__item-title,
+    &__item-subtitle {
+        max-width: 250px;
+    }
+    &__item-title {
+        @extend %roboto-700;
+        font-size: 24px;
+        line-height: 130%;
+        color: #fff;
+        margin-bottom: 12px;
+    }
+    &__item-subtitle {
+        @extend %roboto-400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #fff;
+    }
+    &__item--1 {
+        background-image: url(../../img/hots/1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__item--2 {
+        .hots__item-title,
+        .hots__item-subtitle {
+            color: $dark;
+        }
+        background-image: url(../../img/hots/2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__item--3 {
+        background-image: url(../../img/hots/3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+}

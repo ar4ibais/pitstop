@@ -2,6 +2,7 @@
 @import './global';
 @import './vars';
 @import './reset';
+@import './libs';
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/fast-entry";
@@ -17,5 +18,6 @@
 @import "./components/vacancies";
 @import "./components/questions";
 @import "./components/footer";
+@import "./components/slider";
 
 // Основыные стили

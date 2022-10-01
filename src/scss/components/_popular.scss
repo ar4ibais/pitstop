@@ -1,0 +1,100 @@
+.popular {
+    background-color: #F2F6F7;
+    padding-bottom: 120px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__link {
+        &::after {
+            top: 2;
+        }
+    }
+    &__item {
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 18px;
+        display: inline-block;
+        max-width: 310px;
+    }
+    &__item-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__item-discount {
+        @extend %roboto-700;
+        font-size: 14px;
+        line-height: 133%;
+        color: $red;
+        padding: 3px 12px 2px;
+        border: 1px solid $red;
+        border-radius: 18px;
+    }
+    &__item-like {
+        cursor: pointer;
+    }
+    &__item-like.active {
+        path {
+            fill: red;
+        }
+    }
+    &__item-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    &__item-text {
+        @extend %roboto-700;
+        font-size: 20px;
+        line-height: 130%;
+        color: $dark;
+        margin-bottom: 10px;
+        max-width: 240px;
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__price-act {
+        @extend %roboto-700;
+        font-size: 18px;
+        line-height: 133%;
+        color: $red;
+        margin-right: 8px;
+    }
+    &__price-old,
+    &__price-bonus {
+        @extend %roboto-400;
+        font-size: 16px;
+        line-height: 140%;
+    }
+    &__price-old {
+        color: #A9ACAF;
+        text-decoration: line-through;
+        margin-right: 15px;
+    }
+    &__price-bonus {
+        color: #0BCA35;
+    }
+    &__button {
+        @extend %roboto-700;
+        font-size: 14px;
+        display: inline-block;
+        line-height: 141%;
+        color: #fff;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        background-color: $red;
+        border-radius: 27px;
+        transition: all .2s;
+        cursor: pointer;
+        &:hover {
+            background-color: $dark-red;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.services {
+    margin: 80px 0;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+    &__item {
+        padding: 40px;
+        width: 425px;
+        height: 275px;
+        background-image: url(../../img/services/1.png);
+    }
+    &__item-title {
+        @extend %roboto-700;
+        font-size: 32px;
+        line-height: 130%;
+        color: $dark;
+        margin-bottom: 5px;
+    }
+    &__item-text {
+        max-width: 210px;
+        font-size: 14px;
+        line-height: 140%;
+        @extend %roboto-400;
+        color: #434645;
+    }
+}
