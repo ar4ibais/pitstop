@@ -1,0 +1,65 @@
+.bonus {
+    margin-bottom: 50px;
+    &__wrapper {
+        background: #F2F6F7;
+        border-radius: 30px;
+        padding: 30px 80px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            max-width: 650px;
+        }
+    }
+    &__info {
+        max-width: 600px;
+    }
+    &__title {
+        @extend %roboto-700;
+        font-size: 50px;
+        line-height: 120%;
+        color: $dark;
+        margin-bottom: 15px;
+        i {
+            color: $red;
+            font-style: normal;
+        }
+    }
+    &__text {
+        @extend %roboto-400;
+        font-size: 22px;
+        line-height: 140%;
+        color: #434645;
+        margin-bottom: 35px;
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 141%;
+        text-transform: uppercase;
+        @extend %roboto-700;
+    }
+    &__btn-red {
+        padding: 20px 40px;
+        background: #E41F17;
+        border-radius: 32px;
+        transition: all .2s;
+        color: #fff;
+        margin-right: 30px;
+        &:hover {
+            background: $dark-red;
+        }
+    }
+    &__btn-black {
+        text-decoration: underline;
+        color: $dark;
+        padding-right: 25px;
+        position: relative;
+        &::after {
+            top: 1px;
+        }
+    }
+}

@@ -5,6 +5,12 @@
     padding: 0 10px;
 }
 
+.container-mini {
+    max-width: 1190px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 .title {
     @extend %roboto-700;
     font-size: 50px;
