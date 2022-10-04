@@ -1,0 +1,96 @@
+.stats {
+    margin-bottom: 80px;
+    background-color: #F2F6F7;
+    &__info {
+        background-image: url(../../img/stats-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 120px 0 280px;
+        color: #fff;
+    }
+    &__title {
+        @extend %roboto-700;
+        font-size: 70px;
+        line-height: 130%;
+        margin-bottom: 30px;
+        i {
+            font-style: normal;
+            color: $red;
+        }
+    }
+    &__text {
+        @extend %roboto-400;
+        font-size: 22px;
+        line-height: 140%;
+        max-width: 570px;
+        margin-bottom: 35px;
+    }
+    &__link {
+        @extend %roboto-700;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 131%;
+        position: relative;
+        padding-right: 30px;
+        text-decoration: underline;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 18px;
+            height: 18px;
+            top: 0;
+            right: 0;
+            background-image: url(../../img/icons/arrow-white.svg);
+        }
+    }
+    &__slider {
+        .slick-prev {
+            left: 30px;
+        }
+        .slick-next {
+            right: 30px;
+        }
+    }
+    &__numbs {
+        padding: 100px 0;
+    }
+    &__numbs-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 75px;
+    }
+    &__numbs-red-num {
+        @extend %roboto-700;
+        font-size: 150px;
+        line-height: 130%;
+        color: $red;
+    }
+    &__numbs-red-text,
+    &__numbs-num__text {
+        @extend %roboto-700;
+        font-size: 18px;
+        line-height: 131%;
+        color: $dark;
+        text-transform: uppercase;
+    }
+    &__numbs-text {
+        @extend %roboto-400;
+        font-size: 22px;
+        line-height: 140%;
+        color: #434645;
+        max-width: 760px;
+    }
+    &__numbs-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #434645;
+    }
+    &__numbs-num {
+        @extend %roboto-700;
+        font-size: 90px;
+        line-height: 130%;
+    }
+}

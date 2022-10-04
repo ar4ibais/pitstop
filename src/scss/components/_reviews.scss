@@ -1,0 +1,21 @@
+.reviews {
+    margin-bottom: 120px;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__item img {
+        cursor: pointer;
+    }
+    &__name {
+        @extend %roboto-700;
+        font-size: 24px;
+        line-height: 130%;
+        color: $dark;
+    }
+    &__prof {
+        @extend %roboto-400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #818992;
+    }
+}

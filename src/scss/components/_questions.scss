@@ -1,0 +1,88 @@
+.questions {
+    margin-bottom: 160px;
+    &__wrapper {
+        background: #F2F6F7;
+        border-radius: 30px;
+        padding: 130px 0;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__info {
+        max-width: 500px;
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__text {
+        @extend %roboto-400;
+        font-size: 22px;
+        line-height: 140%;
+        color: #434645;
+        margin-bottom: 20px;
+    }
+    &__link {
+        @extend %roboto-700;
+        font-size: 18px;
+        line-height: 131%;
+        text-transform: uppercase;
+        text-decoration: underline;
+        position: relative;
+        padding-right: 30px;
+        color: $dark;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 18px;
+            height: 18px;
+            top: 0;
+            right: 0;
+            background-image: url(../../img/icons/arrow-right.svg);
+            background-repeat: no-repeat;
+        }
+    }
+    &__form {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    &__input {
+        border: 1px solid #E0E0E0;
+        border-radius: 36px;
+        background-color: #fff;
+        padding: 20px 40px 16px;
+        @extend %roboto-400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #434645;
+        width: 375px;
+        margin-right: 75px;
+    }
+    &__button {
+        @extend %roboto-700;
+        font-size: 14px;
+        line-height: 141%;
+        padding: 20px 40px 16px;
+        text-transform: uppercase;
+        background: #E41F17;
+        border-radius: 32px;
+        transition: all .2s;
+        border: none;
+        color: #fff;
+        &:hover {
+            background: $dark-red;
+        }
+    }
+    &__copy,
+    &__copy-link {
+        @extend %roboto-400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #A9ACAF;
+    }
+    &__copy-link {
+        color: $dark;
+        text-decoration: underline;
+    }
+}
