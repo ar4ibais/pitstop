@@ -1,0 +1,51 @@
+.services-g {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    label {
+        margin-right: 0;
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 130px;
+    }
+    &__item {
+        padding: 40px;
+        background: #F2F6F7;
+        border-radius: 18px;
+        height: 340px;
+    }
+    &__item--1 {
+        grid-column: span 2
+    }
+    &__item-title {
+        @extend %roboto-700;
+        font-size: 32px;
+        line-height: 130%;
+        color: $dark;
+        margin-bottom: 5px;
+    }
+    &__item-text {
+        @extend %roboto-400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #434645;
+    }
+    &__item-btn {
+        @extend %roboto-700;
+        font-size: 14px;
+        line-height: 141%;
+        color: $dark;
+        padding: 10px 30px;
+        background: #E41F17;
+        border-radius: 18px;
+        transition: all .2s;
+        &:hover {
+            background-color: $dark-red;
+        }
+    }
+}
