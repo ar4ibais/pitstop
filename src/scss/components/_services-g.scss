@@ -22,6 +22,15 @@
     &__item--1 {
         grid-column: span 2
     }
+    &__item--2 {
+        position: relative;
+        background-color: #E41F17;
+        h4 {
+            color: #fff;
+        }
+        background-image: url(../../img/services/car-bg.png);
+        background-repeat: no-repeat;
+    }
     &__item-title {
         @extend %roboto-700;
         font-size: 32px;
@@ -36,6 +45,9 @@
         color: #434645;
     }
     &__item-btn {
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
         @extend %roboto-700;
         font-size: 14px;
         line-height: 141%;
@@ -43,6 +55,7 @@
         padding: 10px 30px;
         background: #E41F17;
         border-radius: 18px;
+        border: 1px solid #FFFFFF;
         transition: all .2s;
         &:hover {
             background-color: $dark-red;
