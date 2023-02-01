@@ -1,0 +1,46 @@
+.fast-entry {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__station,
+    &__time {
+        @extend %roboto-700;
+        font-size: 22px;
+        line-height: 130%;
+        color: #818992;
+        margin-bottom: 20px;
+    }
+    &__select,
+    &__time-label {
+        margin-bottom: 30px;
+    }
+    &__time-label {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 20px;
+    }
+    &__time-date,
+    &__time-time {
+        flex-basis: 310px;
+        background: #FFFFFF;
+        border: 1px solid $light-grey;
+        border-radius: 27px;
+        padding: 10px 20px;
+        @extend %roboto-400;
+        font-size: 16px;
+        color: #434645;
+    }
+    &__time-btn {
+        @extend %roboto-700;
+        font-size: 14px;
+        border: none;
+        background-color: $light-grey;
+        border-radius: 27px;
+        padding: 10px 30px;
+        color: #A9ACAF;
+    }
+}
