@@ -1,0 +1,119 @@
+.services-one {
+    margin-bottom: 100px;
+    &__title {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 30px;
+    }
+    &__first {
+        flex-basis: 510px;
+    }
+    &__image {
+        padding: 45px 135px;
+        background-color: #F2F6F7;
+        border-radius: 18px;
+        margin-bottom: 30px;
+        min-height: 330px;
+    }
+    &__bring {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border: 1px solid #FFBEBC;
+        box-shadow: 0px 6px 30px rgba(255, 10, 0, 0.3);
+        border-radius: 18px;
+    }
+    &__bring-best {
+        color: #fff;
+        @extend %roboto-700;
+        font-size: 12px;
+        background-color: $red;
+        border-radius: 27px;
+        padding: 4px 8px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    &__bring-name {
+        color: $dark;
+        font-size: 16px;
+        @extend %roboto-700;
+        margin-bottom: 5px;
+    }
+    &__bring-site {
+        @extend %roboto-700;
+        color: $red;
+        font-size: 14px;
+    }
+    &__description ul {
+        list-style: disc;
+        margin-left: 30px;
+    }
+    &__description-name {
+        font-size: 20px;
+        color: $dark;
+        @extend %roboto-700;
+        margin-bottom: 10px;
+    }
+    &__description-item {
+        @extend %roboto-400;
+        font-size: 18px;
+        color: #434645;
+        margin-bottom: 5px;
+    }
+    &__price {
+        display: inline-block;
+    }
+    &__price-content {
+        padding: 30px 30px 60px;
+        background-color: #F2F6F7;
+        border-radius: 18px;
+        margin-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    &__price-prices {
+        display: flex;
+        gap: 0 15px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &__price-new {
+        color: $red;
+        font-size: 32px;
+        @extend %roboto-700;
+    }
+    &__price-old {
+        font-size: 22px;
+        color: #A9ACAF;
+        text-decoration: line-through;
+        @extend %roboto-400;
+    }
+    &__price-partners {
+        @extend %roboto-400;
+        color: #434645;
+        font-size: 16px;
+        margin-bottom: 20px;
+        i {
+            color: #25CF43;
+            font-style: normal;
+        }
+    }
+    &__price-link {
+        color: #fff;
+        @extend %roboto-700;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 10px 90px;
+        background-color: $red;
+        border-radius: 27px;
+    }
+    &__price-text {
+        color: #818992;
+        @extend %roboto-700;
+        font-size: 14px;
+    }
+}
