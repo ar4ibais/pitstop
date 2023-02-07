@@ -1,0 +1,44 @@
+.vacancy-one {
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__descr {
+        flex-basis: 540px;
+    }
+    &__descr-short {
+        margin-bottom: 30px;
+        display: flex;
+        gap: 0 30px;
+        @extend %roboto-700;
+        font-size: 16px;
+        color: $dark;
+    }
+    &__descr-text p {
+        color: #434645;
+        font-size: 18px;
+        margin-bottom: 15px;
+        @extend %roboto-400;
+    }
+    &__descr-text__active {
+        display: none;
+    }
+    &__descr-text__button {
+        @extend %roboto-700;
+        color: $dark;
+        font-size: 14px;
+        padding: 10px 30px;
+        border: 1px solid #181F22;
+        border-radius: 27px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all .3s;
+        margin-top: 30px;
+        &:hover {
+            background-color: $light-grey;
+        }
+    }
+}
