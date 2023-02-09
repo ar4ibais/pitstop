@@ -28,6 +28,12 @@ const sliders = () => {
         autoplay: true,
         autoplaySpeed: 4000
     });
+
+    $('.vacancy-one__slider').slick({
+        slidesToShow: 1,
+    });
+
+
 };
 
 export default sliders;

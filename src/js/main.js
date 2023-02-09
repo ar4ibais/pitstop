@@ -6,6 +6,7 @@ import hideShow from "./modules/hide-show";
 
 sliders();
 popular();
+
 try {
     tabs('.vacs__tab', '.vacs__tabs-content', '.vacs__tabs', 'vacs__tab--active');
 } catch {}
