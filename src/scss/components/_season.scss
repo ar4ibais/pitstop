@@ -19,6 +19,9 @@
     &__slider {
         width: 880px !important;
         height: 440px;
+        .slick-next {
+            right: -30px !important;
+        }
     }
     &__item {
         padding: 50px;

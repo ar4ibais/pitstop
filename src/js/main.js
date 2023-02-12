@@ -11,6 +11,9 @@ try {
     tabs('.vacs__tab', '.vacs__tabs-content', '.vacs__tabs', 'vacs__tab--active');
 } catch {}
 
+try {
+    tabs('.tab', '.our-team .tabs__cont', '.our-team .tabs', 'tab--active');
+} catch {}
 
 try {
     hideShow('.vacancy-one__descr-text__active', '.vacancy-one__descr-text__button');

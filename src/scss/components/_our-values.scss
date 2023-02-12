@@ -1,0 +1,57 @@
+.our-values {
+    margin-bottom: 100px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__grid-inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 50px;
+        grid-column-gap: 30px;
+    }
+    &__grid-item {
+        max-width: 425px;
+        padding-left: 65px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 45px;
+            height: 45px;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+        }
+    }
+    &__grid-item--1::before {
+        background-image: url(../../img/icons/our-values/1.svg);
+    }
+    &__grid-item--2::before {
+        background-image: url(../../img/icons/our-values/2.svg);
+    }
+    &__grid-item--3::before {
+        background-image: url(../../img/icons/our-values/3.svg);
+    }
+    &__grid-item--4::before {
+        background-image: url(../../img/icons/our-values/4.svg);
+    }
+    &__grid-item--5::before {
+        background-image: url(../../img/icons/our-values/5.svg);
+    }
+    &__grid-item--6::before {
+        background-image: url(../../img/icons/our-values/6.svg);
+    }
+    &__grid-title {
+        @extend %roboto-700;
+        font-size: 32px;
+        color: #000;
+        margin-bottom: 10px;
+        
+    }
+    &__grid-text {
+        color: #434645;
+        @extend %roboto-400;
+        font-size: 18px;
+    }
+}

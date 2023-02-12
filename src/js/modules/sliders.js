@@ -33,6 +33,10 @@ const sliders = () => {
         slidesToShow: 1,
     });
 
+    $('.about__slider').slick({
+        slidesToShow: 1,
+    });
+
 
 };
 

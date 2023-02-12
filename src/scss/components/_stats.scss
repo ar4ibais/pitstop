@@ -46,11 +46,14 @@
     }
     &__slider {
         .slick-prev {
-            left: 30px;
+            left: 30px !important;
         }
         .slick-next {
-            right: 30px;
+            right: 30px !important;
         }
+    }
+    &__item img {
+        width: 100%;
     }
     &__numbs {
         padding: 100px 0;

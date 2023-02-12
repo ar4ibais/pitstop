@@ -42,7 +42,7 @@
 } 
 
 .show{
-    display: block !important; 
+    display: flex !important; 
 } 
 
 .fade{
@@ -50,3 +50,24 @@
 } 
 
 @keyframes fade{from{opacity: 0.1;}to{opacity: 1;}}
+
+.tabs {
+    display: flex;
+    gap: 0 15px;
+    margin-bottom: 30px;   
+}
+
+.tab {
+    border: 1px solid $light-grey;
+    border-radius: 27px;
+    padding: 9px 26px;
+    @extend %roboto-400;
+    color: #434645;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tab--active {
+    color: #fff;
+    background-color: #434645;
+}

@@ -1,0 +1,19 @@
+.about {
+    margin-bottom: 80px;
+    &__slider img {
+        border-radius: 30px;
+        
+    }
+    &__slider {
+        .slick-next, 
+        .slick-prev {
+            bottom: 0;
+        }
+        .slick-next {
+            right: 10px;
+        }
+        .slick-prev {
+            right: 60px;
+        }
+    }
+}
