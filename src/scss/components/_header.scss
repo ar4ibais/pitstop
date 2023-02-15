@@ -41,13 +41,14 @@
         margin-bottom: 30px;
     }
     &__info-btn {
+        display: none;
         cursor: pointer;
-        margin-right: 30px;
     }
     &__logo {
         margin-right: 35px;
     }
-    &__services {
+    &__services,
+    &__mobile-top__link {
         @extend %roboto-700;
         color: #fff;
         font-size: 16px;
@@ -60,6 +61,10 @@
         &:hover {
             background-color: $dark-red;
         }
+    }
+    &__mobile-top__link {
+        font-size: 12px;
+        padding: 6px 20px;
     }
     &__search-label {
         position: relative;
@@ -107,5 +112,94 @@
     }
     &__item + .header__item {
         margin-left: 35px;
+    }
+    &__mobile-wrapper {
+        min-height: 100vh;
+    }
+    &__mobile-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    &__mobile-top__close {
+        cursor: pointer;
+    }
+    &__mobile-accordion {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__mobile-accordion--active {
+        .header__mobile-accordion__image {
+            background-image: url(../../img/icons/up.svg);
+        }
+    }
+    &__mobile-accordion__image {
+        background-image: url(../../img/icons/down.svg);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        &__logo {
+            margin-right: 15px;
+        }
+        &__search-label {
+            margin-right: 30px;
+        }
+        &__search {
+            width: 500px;
+            font-size: 14px;
+        }
+        &__services {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 1060px) {
+    .header {
+        &__logo {
+            margin-right: 15px;
+        }
+        &__search-label {
+            margin-right: 20px;
+        }
+        &__search {
+            width: 400px;
+            font-size: 12px;
+        }
+        &__search-icon {
+            top: 12px;
+        }
+        &__services {
+            font-size: 12px;
+        }
+        &__favs-item, 
+        &__item {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        &__top,
+        &__bottom,
+        &__services,
+        &__favs,
+        &__search-label {
+            display: none;
+        }
+        &__info {
+            justify-content: space-between;
+        }
+        &__info-btn {
+            display: block;
+            margin-right: 0;
+        }
     }
 }

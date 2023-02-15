@@ -3,9 +3,11 @@ import popular from "./modules/popular";
 import Fancybox from "@fancyapps/ui";
 import tabs from "./modules/tabs";
 import hideShow from "./modules/hide-show";
+import accordions from "./modules/accordions";
 
 sliders();
 popular();
+accordions();
 
 try {
     tabs('.vacs__tab', '.vacs__tabs-content', '.vacs__tabs', 'vacs__tab--active');
