@@ -1,0 +1,37 @@
+.insta-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 80px;
+    &__item--1 {
+        grid-column: span 2;
+        background-image: url(../../img/insta/insta-bg.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 25px;
+        img {
+            max-width: 160px;
+            max-height: 160px;
+        }
+    }
+    &__item-title {
+        @extend %roboto-700;
+        color: #fff;
+        font-size: 50px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+    &__item-link {
+        padding: 10px 30px;
+        @extend %roboto-700;
+        color: #181F22;
+        font-size: 14px;
+        border: 1px solid #FFFFFF;
+        border-radius: 27px;
+    }
+    &__image {
+        width: 100%;
+    }
+}
