@@ -1,12 +1,10 @@
 .entry {
     &__wrapper {
         margin: 30px 0;
-        min-height: 635px;
         background-image: url(../../img/entry-bg.jpg);
         background-repeat: no-repeat;
-    }
-    &__inner {
         position: relative;
+        min-height: 635px;
     }
     &__info {
         padding: 170px 0 170px 80px;
@@ -58,7 +56,7 @@
     &__buttons {
         position: absolute;
         right: -20px;
-        bottom: 0;
+        bottom: 50px;
     }
     &__btn {
         padding: 27px;
@@ -78,6 +76,104 @@
         background-color: $red;
         &:hover {
             background-color: $dark-red;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .entry {
+        &__wrapper {
+            margin-right: 20px;
+            background-size: contain;
+            min-height: 200px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .entry {
+        &__wrapper {
+            margin-right: 0;
+        }
+        &__info {
+            padding: 60px 40px 80px;
+        }
+        &__title {
+            font-size: 50px;
+        }
+        &__buttons {
+            display: none;
+        }
+        &__info-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 20px 0;
+        }
+        &__link {
+            max-width: fit-content;
+            font-size: 14px;
+        }
+        &__link-red {
+            padding: 10px 80px 10px 60px;
+            &::after {
+                right: 45px;
+                top: 11px;
+            }
+        }
+        &__link-white {
+            padding: 10px 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .entry {
+        &__info {
+            padding: 30px;
+        }
+        &__title {
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .entry {
+        &__info {
+            padding: 10px;
+        }
+        &__title {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        &__info-btns {
+            gap: 15px 0;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .entry {
+        &__title {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        &__info-btns {
+            gap: 15px 0;
+        }
+        &__link {
+            font-size: 10px;
+        }
+        &__link-red {
+            padding: 5px 60px 5px 40px;
+            &::after {
+                right: 30px;
+                top: 7px;
+            }
+        }
+        &__link-white {
+            padding: 5px 20px;
         }
     }
 }
