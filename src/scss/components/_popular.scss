@@ -115,3 +115,17 @@
         }
     }
 }
+
+@media (max-width: 690px) {
+    .popular {
+        &__top {
+            display: block; 
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__item {
+            max-width: 100%;
+        }
+    }
+}
