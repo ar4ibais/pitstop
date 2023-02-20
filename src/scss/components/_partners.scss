@@ -4,3 +4,17 @@
         margin-bottom: 50px;
     }
 }
+
+@media (max-width: 550px) {
+    .partners {
+        margin-bottom: 80px;
+        &__title {
+            margin-bottom: 35px;
+            font-size: 35px;
+        }
+        .slick-next,
+        .slick-prev {
+            display: none;
+        }
+    }
+}

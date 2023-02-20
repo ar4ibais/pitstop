@@ -48,7 +48,27 @@ const sliders = () => {
     });
 
     $('.reviews__slider').slick({
-        slidesToShow: 4
+        slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 968,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 670,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.stats__slider').slick({
@@ -60,7 +80,34 @@ const sliders = () => {
     $('.partners__slider').slick({
         slidesToShow: 6,
         autoplay: true,
-        autoplaySpeed: 4000
+        autoplaySpeed: 4000,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+            {
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 2,
+                    autoplaySpeed: 2500
+                }
+            }
+        ]
     });
 
     $('.vacancy-one__slider').slick({
